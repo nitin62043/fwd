@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRIDS...</title>
+    <style>
+        .container{
+            background-color: brown;
+            border: 10px black ridge;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 100px 100px 100px;
+            grid-row-gap: 2px;
+            grid-column-gap: 2px;
+
+        }
+        .item{
+            background-color: rebeccapurple;
+            border: 2px blue solid;
+            padding: 10px;
+            color: skyblue;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 5px;
+
+        }
+        #i3{
+            grid-row: 2/span3;
+        } 
+    
+      /*   #i7{
+            grid-column-start: 3;
+            grid-column-end: span 2;
+            grid-column: shorthand ;
+            
+        } */
+        #i9{
+            grid-area: 2/3/span 3/span2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item" id="i3">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+        <div class="item" id="i7">Item7</div>
+        <div class="item">Item8</div>
+        <div class="item" id="i9">Item9</div>
+    </div>
+</body>
+</html>

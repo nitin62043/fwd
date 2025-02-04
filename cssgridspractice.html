@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: khaki;
+            border: 7px blue ridge;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 100px 100px 100px;
+
+        }
+        .image{
+            background-color: aqua;
+            border: 5px saddlebrown ridge;
+            padding: 20px;
+            margin: 3px;
+            
+        }
+        #i1{
+           
+            grid-column:1/span2 ;
+            text-align: center;
+
+        }
+        #i2{
+            grid-column:1/span2 ;
+            text-align: center;
+        }
+        #i5{
+            grid-column: 1/span2;
+        }
+
+        #i6{
+            grid-column:3/span2;
+        }
+    </style>
+</head>
+<body>
+    
+   <div class="container">
+ 
+    <div class="image" id="i1"><b>Famous Dishes of India</b></div>
+    <div class="image" id="i2"><b>Image 1 With Caption</b></div>
+    <div class="image"><b>Image 2</b></div>
+    <div class="image"><b>Image 3</b></div>
+    <div class="image"><b>Image 4</b></div>
+    <div class="image" id="i5"><b>Image 5</b></div>
+    <div class="image" id="i6"><b>Image 6</b></div>
+   </div>
+</body>
+</html>
